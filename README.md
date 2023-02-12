@@ -1,2 +1,2 @@
 # Browser-Windows
-It's Windows 95, but in your browser!
+It's Windows XP, but in your browser!
