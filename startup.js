@@ -17,7 +17,7 @@ if(window.params.has("mem")) {
         alert("mem invalid. reverting to 256mb");
     }
 } else {
-    window.mem = 256; //mb
+    window.mem = 512; //mb
 }
 
 //initial state
@@ -40,7 +40,7 @@ if(window.params.has("iso") != true) {
         window.iso = "rootfs.iso"+"?version="+window.version;
         console.log("using "+window.iso+" as iso");
     } else {
-        console.log("rootfs.iso not found");
+        console.log("rootfs.iso not found. Windows will NOT BOOT.");
         window.iso = "";
     }
 } else {
