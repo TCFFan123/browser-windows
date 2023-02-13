@@ -3,7 +3,7 @@ if(!window.WebAssembly) {//if no web assembly
     document.write("unsupported - no Web Assembly");
 }
 //start message
-console.log("Welcome to Browser Linux");
+console.log("Welcome to Browser Windows");
 //version
 window.version = 1.4; //buildroot 2022.8
 //parse url
@@ -129,7 +129,7 @@ var emulator = window.emulator = new V86Starter({
         baseurl: "flat/",
     },
     cdrom: {
-        url: window.iso, 
+        url: ipxe.iso, 
 	    async: (window.params.has("async") && (window.params.get("async") == "true")) ,//async
     },
     initial_state: { url: window.initial_state },
