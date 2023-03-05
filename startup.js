@@ -36,11 +36,11 @@ if(window.params.has("initial")) {
 
 //iso
 if(window.params.has("iso") != true) {
-    if(checkExistence("rootfs.iso")) {
-        window.iso = "rootfs.iso"+"?version="+window.version;
+    if(checkExistence("ipxe.iso")) {
+        window.iso = "ipxe.iso"+"?version="+window.version;
         console.log("using "+window.iso+" as iso");
     } else {
-        console.log("rootfs.iso not found. Windows will NOT BOOT.");
+        console.log("ipxe.iso not found. IPXE will NOT BOOT.");
         window.iso = "";
     }
 } else {
