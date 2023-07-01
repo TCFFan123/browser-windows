@@ -1,2 +1,2 @@
 # Browser-Windows
-It's Windows XP, but in your browser!
+It's ReactOS but in your browser!
